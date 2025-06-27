@@ -6,7 +6,6 @@ namespace Tipos_Datos_IntFloatDouble
     internal class Program
     {
 
-
         static void Main(string[] args)
         {
             // Numeros enteros -- integer numbers (int)
@@ -41,7 +40,7 @@ namespace Tipos_Datos_IntFloatDouble
             string respuesta = "";
             Console.Write("Escriba su edad: ");
             respuesta = Console.ReadLine();
-            Console.WriteLine(respuesta);
+            Console.WriteLine("Su edad es {0}", respuesta); // {0} es un marcador de posición para la variable respuesta, donde se coloque, saldrá el valor de la variable asignada
             Console.ReadKey();
 
         }
