@@ -31,8 +31,18 @@ namespace Tipos_Datos_IntFloatDouble
             // Cadena de texto -- string
 
             string MiNombre = "Carlos";
-            string mensaje = "Hola, mi nombre es ";
-            Console.WriteLine(mensaje + MiNombre);
+            MiNombre = MiNombre.Replace("a", "2");
+            string mensaje = "Hola, mi nombre es " + MiNombre;
+
+            // Existen métodos para los tipos de datos
+            Console.WriteLine(mensaje.ToUpper());
+
+            // Ejemplo de lectura de datos sin saltar lineas con Write
+            string respuesta = "";
+            Console.Write("Escriba su edad: ");
+            respuesta = Console.ReadLine();
+            Console.WriteLine(respuesta);
+            Console.ReadKey();
 
         }
     }
