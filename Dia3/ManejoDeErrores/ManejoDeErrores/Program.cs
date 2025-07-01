@@ -95,6 +95,15 @@ namespace ManejoDeErrores
             catch (DivideByZeroException)
             {
                 Console.WriteLine("No se puede dividir por cero. Por favor, ingrese un número diferente de cero.");
+            } catch (Exception ex)
+            {
+                // Capturamos cualquier otra excepción y mostramos su mensaje
+                Console.WriteLine($"Ocurrió un error: {ex.Message}");
+            }
+            finally
+            {
+                // Este bloque se ejecuta siempre, haya ocurrido o no una excepción
+                Console.WriteLine("Fin del programa.");
             }
         }
     }
