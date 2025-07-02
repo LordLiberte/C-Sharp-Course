@@ -32,9 +32,18 @@ namespace Operadores
             num--; // Resta 1 al numero
             Console.WriteLine(num);
 
+            // Operadores matematicos
+            int resultado = num1 + num2; // Suma
+            Console.WriteLine($"El resultado de la suma entre {num1} y {num2} es igual a {resultado}");
 
+            resultado = num1 - num2; // Resta
+            Console.WriteLine($"El resultado de la resta de {num1} y {num2} es igual a {resultado}");
 
+            resultado = num1 * num2; // Multiplicación
+            Console.WriteLine($"El resultado de la multiplicación de {num1} y {num2} es igual a {resultado}");
 
+            float resultadoDivision = (float)num1 / (float)num2; // División con num2 > 0
+            Console.WriteLine($"El resultado de la división entre {num1} y {num2} es igual a {resultadoDivision}");
         }
     }
 }
