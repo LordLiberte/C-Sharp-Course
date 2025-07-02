@@ -69,6 +69,23 @@ namespace Operadores
             esMenor = num1 != num2; // Diferente de
             Console.WriteLine($"{num1} es diferente de {num2}: {esMenor}");
 
+            // Operadores condicionales 
+            // AND Lógico
+
+            bool esMenorySoleado;
+
+            esMenorySoleado = esMenor && haySol; // AND Lógico
+            Console.WriteLine($"¿Es {num1} menor que {num2} y hay sol? {esMenorySoleado}");
+
+
+
+            // OR Lógido
+
+            bool esMenoroSoleado;
+
+            esMenoroSoleado = esMenor || haySol; // OR Lógico
+            Console.WriteLine($"¿Es {num1} menor que {num2} o hay sol? {esMenoroSoleado}");
+
 
         }
     }
