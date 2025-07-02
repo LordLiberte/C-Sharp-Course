@@ -44,6 +44,32 @@ namespace Operadores
 
             float resultadoDivision = (float)num1 / (float)num2; // División con num2 > 0
             Console.WriteLine($"El resultado de la división entre {num1} y {num2} es igual a {resultadoDivision}");
+
+            resultado = num1 % num2; // Módulo
+            Console.WriteLine($"El resultado del módulo entre {num1} y {num2} es igual a {resultado}");
+
+
+            // Operadores relacionales
+            bool esMenor;
+            esMenor = num1 < num2; // Menor que
+            Console.WriteLine($"{num1} es menor que {num2}: {esMenor}");
+
+            esMenor = num1 <= num2; // Menor o igual que
+            Console.WriteLine($"{num1} es menor o igual que {num2}: {esMenor}");
+
+            esMenor = num1 > num2; // Mayor que
+            Console.WriteLine($"{num1} es mayor que {num2}: {esMenor}");
+
+            esMenor = num1 >= num2; // Mayor o igual que
+            Console.WriteLine($"{num1} es mayor o igual que {num2}: {esMenor}");
+
+            esMenor = num1 == num2; // Igual que
+            Console.WriteLine($"{num1} es igual a {num2}: {esMenor}");
+
+            esMenor = num1 != num2; // Diferente de
+            Console.WriteLine($"{num1} es diferente de {num2}: {esMenor}");
+
+
         }
     }
 }
