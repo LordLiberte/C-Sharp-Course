@@ -10,15 +10,17 @@ namespace TomaDeDecisiones
     {
         static void Main(string[] args)
         {
-            int temperatura = 24;
 
-            if (temperatura < 10)
+            Console.Write("Ingrese la temperatura: ");
+            int temperatura = int.Parse(Console.ReadLine());
+
+            if (temperatura < 22)
             {
-                Console.WriteLine("Abrigate");
+                Console.WriteLine("Hace frio, abrigate");
             }
-            else if (temperatura == 10)
+            else if (temperatura == 22)
             {
-                Console.WriteLine("Hace 10 grados de temperatura");
+                Console.WriteLine("Se está fresco");
             }
             else
             {
