@@ -10,6 +10,20 @@ namespace TomaDeDecisiones
     {
         static void Main(string[] args)
         {
-        }
+            int temperatura = 24;
+
+            if (temperatura < 10)
+            {
+                Console.WriteLine("Abrigate");
+            }
+            else if (temperatura == 10)
+            {
+                Console.WriteLine("Hace 10 grados de temperatura");
+            }
+            else
+            {
+                Console.WriteLine("Hace calor, puedes ir ligero de ropa.");
+            }
+        }            
     }
 }
