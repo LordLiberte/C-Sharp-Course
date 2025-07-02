@@ -20,6 +20,20 @@ namespace Operadores
             Console.WriteLine($"Negación de {num1}: {num3}");
 
 
+            bool haySol = true;
+            Console.WriteLine($"¿Hay sol? {!haySol}"); // ! es la negación lógica
+
+            // Operadores de adición
+            int num = 0;
+            num++;  // Suma 1 al numero
+            Console.WriteLine(num);
+
+            // Operadores de sustracción
+            num--; // Resta 1 al numero
+            Console.WriteLine(num);
+
+
+
 
         }
     }
