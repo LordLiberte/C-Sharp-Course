@@ -18,7 +18,7 @@ namespace If_Anidados
             Console.Write("Por favor, ingrese su nombre de usuario: ");
             username = Console.ReadLine();
 
-            if (estaRegistrado)
+            if (estaRegistrado && username != "")
             {
                 Console.WriteLine("Hola, usuario registrado.");
                 if (username != "")
@@ -26,7 +26,9 @@ namespace If_Anidados
                     Console.WriteLine($"Hola, {username}.");
                     if (username.Equals("admin"))  // Equals method for string comparison
                     {
+                        
                         Console.WriteLine("Bienvenido, administrador.");
+                        
                     }
                 }
             }
