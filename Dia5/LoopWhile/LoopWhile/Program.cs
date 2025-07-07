@@ -11,7 +11,7 @@ namespace LoopWhile
         static void Main(string[] args)
         {
 
-            int contador = 0;
+            int contador = 15;
 
             do
             {
