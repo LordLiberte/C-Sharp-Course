@@ -1,0 +1,13 @@
+Las ventajas de usar loops:
+
+* Nos ahorran tiempo
+* Repetición rápida y sencilla del código
+* Permite trabajar con cantidades enormes de información
+* Permite repetir en arrays
+
+Tipos de loops:
+
+* Loop for
+* Loop while 
+* Loop do while
+* Loop foreach
