@@ -11,10 +11,11 @@ namespace LoopFor
         static void Main(string[] args)
         {
 
-            for (int contador = 0; contador < 100; contador++)
+            for (int contador = 0; contador < 100; contador = contador * 2)
             {
+                contador++;
                 Console.WriteLine("Contador: " + contador);
-                Console.ReadLine();
+
             }
         }
     }
