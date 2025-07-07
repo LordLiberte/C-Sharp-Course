@@ -37,6 +37,20 @@ namespace LoopWhile
 
 
             Console.WriteLine(suma);
+
+            int numero = 5;
+            int factorial = 1;
+            contador = 1;
+
+            do
+            {
+                factorial = factorial * contador;
+                contador++;
+            } while (contador <= 5);
+
+
+
+            Console.WriteLine(factorial);
         }
     }
 }
