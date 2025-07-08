@@ -15,7 +15,7 @@ namespace LoopWhile
             string nombre = "";
             bool esNumero = false;
 
-            while (contador <= 10)
+            while (contador < 10)
             {
                 nombre = Console.ReadLine();
                 if (nombre != "") {
@@ -40,6 +40,9 @@ namespace LoopWhile
                 Console.WriteLine("Tienes {0} alumnos", contador);
         
             }
+
+            Console.WriteLine("Has introducido {0} alumnos", contador);
+            Console.WriteLine("El bus está lleno");
         }
     }
 }
