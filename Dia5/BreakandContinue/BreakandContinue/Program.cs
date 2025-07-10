@@ -31,7 +31,7 @@ namespace BreakandContinue
                     Console.WriteLine("No se ingresaron notas.");
                     continue;
                 }
-                if (terminar == "fin")
+                else if (terminar == "fin")
                 {
                     Console.WriteLine($"El promedio de las notas es: {media}");
                     break;
