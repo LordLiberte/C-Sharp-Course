@@ -13,13 +13,14 @@ namespace Constructores
         private int edad;
         private string colorOjos;
 
-        // Constructor por defecto. Se ejecuta al crear una instancia de la clase Humano.
+        // Se ejecuta al crear una instancia de la clase Humano.
         // Con esto se crea un constructor por defecto. A la instancia habrá que asignarle valores en el programa principal.
-        public Humano(string nombre, string apellido, int edad, string colorOjos)
+        // Constructor de tipo parametrizado
+       
+        public Humano(string nombre, string apellido, string colorOjos)
         {
             this.nombre = nombre;  // Con this se hace referencia a los atributos de la clase a la que asignamos valores de los parámetros del constructor.
             this.apellido = apellido;
-            this.edad = edad;
             this.colorOjos = colorOjos;
         }
 
@@ -34,6 +35,14 @@ namespace Constructores
              apellido = Console.ReadLine();
         }
         */
+
+        // Constructor por defecto. Constructor no parametrizado.
+        public Humano()
+        {
+            Console.WriteLine("Constructor por defecto. Objeto Creado");
+        }
+
+        // Método para saludar al humano.
         public void Saludar()
         {
             Console.WriteLine("Hola " + nombre + " " + apellido);
