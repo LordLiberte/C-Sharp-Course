@@ -10,8 +10,15 @@ namespace Constructores
     {
         static void Main(string[] args)
         {
+            // Crear una instancia de la clase Humano utilizando el constructor definido en la clase Humano.
+            Humano human = new Humano
+                (
+                nombre: Console.ReadLine(), 
+                apellido: Console.ReadLine(), 
+                edad: int.Parse(Console.ReadLine()), "Azules"
+                );
 
-            Humano human = new Humano(nombre: Console.ReadLine(), apellido: Console.ReadLine());
+            // Llamar al método Saludar de la instancia creada.
             human.Saludar();
         }
     }
