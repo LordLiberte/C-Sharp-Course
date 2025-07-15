@@ -37,6 +37,12 @@ namespace Arrays
             Console.WriteLine("Tercero: " + arraynumeros[2]); // Imprime el tercer elemento
             Console.WriteLine("Cuarto: " + arraynumeros[3]); // Imprime el cuarto elemento
             Console.WriteLine("Quinto: " + arraynumeros[4]); // Imprime el quinto elemento
+            Console.WriteLine("Max: " + arraynumeros.Max()); // Imprime el valor máximo del array
+            Console.WriteLine("Min: " + arraynumeros.Min()); // Imprime el valor mínimo del array
+            Console.WriteLine("Suma: " + arraynumeros.Sum()); // Imprime la suma de todos los elementos del array
+            Console.WriteLine("Media" + arraynumeros.Average()); // Imprime el promedio de los elementos del array
+            Console.WriteLine("Longitud del array: " + arraynumeros.Length); // Imprime la longitud del array
+            Console.WriteLine("Valores del Array: " + string.Join(", ", arraynumeros)); // Imprime todos los elementos del array separados por comas
 
         }
     }
