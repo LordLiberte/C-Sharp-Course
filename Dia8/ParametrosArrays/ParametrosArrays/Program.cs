@@ -10,7 +10,10 @@ namespace ParametrosArrays
     {
         static void Main(string[] args)
         {
+
+            // Solicitar al usuario que ingrese 5 puntajes
             int[] puntajes = new int[5];
+
             // Llenar el array con puntajes
             for (int i = 0; i < puntajes.Length; i++)
             {
@@ -24,10 +27,13 @@ namespace ParametrosArrays
                     i--; // Decrementar i para repetir la entrada
                 }
             }
+
             // Calcular el promedio
             double promedio = ObtenerPromedio(puntajes);
             // Mostrar el promedio
             Console.WriteLine($"El promedio de los puntajes es: {promedio}");
+
+            Console.WriteLine(Suma(puntajes));
         }
 
         static double ObtenerPromedio(int[] arrayPuntajes)
@@ -47,6 +53,18 @@ namespace ParametrosArrays
 
             double media = (double)suma / cantidad;
             return media;
+        }
+
+        static int Suma(int[] array)
+        {
+
+            int sumatorio = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sumatorio += array[i];
+            }
+
+            return sumatorio;
         }
     }
 }
