@@ -37,6 +37,18 @@ namespace Herencia
             // Mostrar la URL de la imagen editada
             Console.WriteLine($"URL de la imagen editada: {imagen1.UrlImage}");
 
+            // Instancia de la clase PublicacionVideo
+            PublicacionVideo video1 = new PublicacionVideo("Mi primer video", "Juan Pérez", "https://animales.video.com", true, 25);
+
+            // Mostrar información del video
+            Console.WriteLine(video1.ToString());
+
+            // Editar información del video
+            video1.Editar("Primer video editado", "Juan Pérz", true);
+
+            // Mostrar información editada por pantalla
+            Console.WriteLine(video1.ToString());
+
         }
 
     }
